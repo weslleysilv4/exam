@@ -9,7 +9,7 @@ export const searchPostTitle = () => {
     const dbPost = readPost();
     const posts = dbPost.filter(post => post.title === searchTitle);
 
-    const postSection = document.querySelector('.post-section');
+    const postSection = document.querySelector('#tablePost');
     postSection.innerHTML = '';
 
     if (posts.length > 0) {
@@ -17,7 +17,7 @@ export const searchPostTitle = () => {
     } else {
         alert('Post não encontrado!');
         updateTable();
-        closeModalSearch();
     }
+    closeModalSearch();
 };
 

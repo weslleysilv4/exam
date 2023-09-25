@@ -9,7 +9,7 @@ export const searchPostDate = () => {
     const dbPost = readPost();
     const posts = dbPost.filter(post => post.date === fomartedDate);
 
-    const postSection = document.querySelector('.post-section');
+    const postSection = document.querySelector('#tablePost');
     postSection.innerHTML = '';
 
     if (posts.length > 0) {
@@ -17,8 +17,8 @@ export const searchPostDate = () => {
     } else {
         alert('Nenhum Post nesta data!');
         updateTable();
-        closeModalSearch();
     }
+    closeModalSearch()
 };
 
 const spliceDate = (date) => {
