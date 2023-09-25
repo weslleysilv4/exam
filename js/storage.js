@@ -1,5 +1,3 @@
-// storage.js
-
 export function getLocalStorage () {
   const storedData = localStorage.getItem('dbPost')
   return JSON.parse(storedData) ?? []

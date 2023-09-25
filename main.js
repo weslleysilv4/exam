@@ -4,8 +4,6 @@ import { openModalCreate, openModalSearch, closeModalCreate, closeModalSearch } 
 import { postSearchController } from './js/postController.js'
 import { removePost } from './js/removePost.js'
 import { savePost } from './js/savePost.js'
-import { searchPostTitle } from './js/searchPost.js'
-import { searchPostDate } from './js/searchPostDate.js'
 import { updateTable } from './js/updateTable.js'
 
 updateTable();
