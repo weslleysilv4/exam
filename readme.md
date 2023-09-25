@@ -1,6 +1,4 @@
-# Projeto Exam
-## Bem-vindo ao Valorant App!
-
+## Projeto Exam
 ### O Projeto Exam foi desenvolvido usando JavaScript Vanilla, com funções modularizadas seguindo o paradigma de Orientação a Objetos. Além disso, aproveitei o Vite como gerenciador de pacotes para facilitar a gestão de imports e exports. Este projeto tem como objetivo servir como um documento que comprova minhas habilidades, com a possibilidade de dispensar a matéria introdutória em Front-End.
 
 <br/>
