@@ -104,7 +104,7 @@ header{
 .social-links a {
   text-decoration: none;
   color: var(--default-font);
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .social-links a:hover {
@@ -115,7 +115,7 @@ header{
   margin-top: 60px;
 }
 
-.post-section {
+.post-section, .post-item {
   width: 100%;
   height: 100%;
   display: flex;
@@ -191,6 +191,12 @@ transition: all .5s linear;
   opacity: 0;
 }
 
+#modal, #modal-search{
+  background-color: var(--default-gray);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
 .modal-search.active {
   display: block;
   width: 100%;
@@ -205,8 +211,6 @@ form {
   align-items: center;
   padding: 20px;
   margin-top: 20px;
-  border-radius: 10px;
-  background-color: var(--default-gray);
   transition: all 1s ease-in-out;
 }
 
