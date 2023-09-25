@@ -1,3 +1,4 @@
 export const isValidFields = () => {
-    return document.getElementById('form_input').reportValidity()
+    return document.getElementById('form').reportValidity()
 }
+console.log(isValidFields())

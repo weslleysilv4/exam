@@ -30,16 +30,8 @@ document.getElementById('close-panel-icon')
   .addEventListener('click', closeModalCreate)
 
 document.getElementById('close-panel-icon-search')
-  .addEventListener('click', () => {
-    closeModalSearch(); 
-    clearFields();
-    updateTable(); 
-  })
+  .addEventListener('click', closeModalSearch)
 
 document.getElementById('create-post-btn')
-  .addEventListener('click', () => {
-    savePost();
-    clearFields();
-    closeModalCreate();
-  })
+  .addEventListener('click', savePost)
 

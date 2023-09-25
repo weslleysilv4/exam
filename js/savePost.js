@@ -5,7 +5,7 @@ import { updateTable } from './updateTable.js'
 
 const data = new Date()
 export const savePost = () => {
-  if (isValidFields) {
+  if (isValidFields()) {
     const post = {
       title: document.getElementById('p-title').value,
       content: document.getElementById('p-content').value,
@@ -14,6 +14,8 @@ export const savePost = () => {
     createPost(post)
     insertInf(post)
     updateTable()
+    clearFields()
+    closeModalCreate()
   }
 }
 
