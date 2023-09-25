@@ -1,7 +1,5 @@
 import { createPost } from './storage.js'
-import {closeModalCreate } from './openModal.js'
-import isValidFields from './isValidFields.js'
-import { clearFields } from './clearFields.js'
+import {isValidFields} from './isValidFields.js'
 import { insertInf } from './insertInf.js'
 import { updateTable } from './updateTable.js'
 
@@ -15,9 +13,7 @@ export const savePost = () => {
     }
     createPost(post)
     insertInf(post)
-    clearFields()
     updateTable()
-    closeModalCreate()
   }
 }
 

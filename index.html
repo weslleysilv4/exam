@@ -35,15 +35,15 @@
     <section class="modal" id="modal">
         <div class="container">
             <div class="modal-content">
-                <form id="form" method="get">
+                <form id="form_input" method="get">
                     <div class="close-panel">
                         <i class="fa-solid fa-x" id="close-panel-icon"></i>
                     </div>
                     <h3>Criar Post</h3>
                     <label for="p-title">Título</label>
-                    <input type="text" id="p-title" placeholder="Título" required>
+                    <input type="text" id="p-title" class="form-inputs" placeholder="Título" required>
                     <label for="p-content">Conteúdo</label>
-                    <textarea id="p-content" cols="30" rows="10" placeholder="Conteúdo" required></textarea>
+                    <textarea id="p-content" cols="30" rows="10" class="form-inputs" placeholder="Conteúdo" required></textarea>
                     <button type="button" id="create-post-btn">Enviar</button>
                 </form>                
             </div>
@@ -70,10 +70,8 @@
     <section id="post">
         <div class="container">
             <div class="post-section">
-                <table>
-                    <thead>
-                    </thead>
-                    <tbody>
+                <table id="tableInfs">
+                    <tbody id="tablePost">
                         <tr>
                             <td class="post_header">Cool post<i class="fa-solid fa-trash"></i></td>
                             <td class="post_date">May 24, 2023</td>
@@ -82,7 +80,6 @@
                     </tbody>
                 </table>
             </div>
-            <hr>
         </div>
     </section>
     <script crossorigin="anonymous" type="module" src="./main.js"></script>

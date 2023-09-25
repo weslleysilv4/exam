@@ -12,7 +12,10 @@ document.querySelector('.post-section')
   .addEventListener('click', removePost)
 
 document.querySelector('.menu-btn')
-  .addEventListener('click', openMenu)
+  .addEventListener('click', () => {
+    openMenu();
+    clearFields();
+  })
 
 document.querySelector('.create-post')
   .addEventListener('click', openModalCreate)
@@ -34,5 +37,9 @@ document.getElementById('close-panel-icon-search')
   })
 
 document.getElementById('create-post-btn')
-  .addEventListener('click', savePost)
+  .addEventListener('click', () => {
+    savePost();
+    clearFields();
+    closeModalCreate();
+  })
 

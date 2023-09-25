@@ -16,8 +16,8 @@ export const searchPostTitle = () => {
         posts.forEach(insertInf);
     } else {
         alert('Post não encontrado!');
-        closeModalSearch();
         updateTable();
+        closeModalSearch();
     }
 };
 

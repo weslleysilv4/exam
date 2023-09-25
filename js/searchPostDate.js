@@ -16,8 +16,8 @@ export const searchPostDate = () => {
         posts.forEach(insertInf);
     } else {
         alert('Nenhum Post nesta data!');
-        closeModalSearch();
         updateTable();
+        closeModalSearch();
     }
 };
 

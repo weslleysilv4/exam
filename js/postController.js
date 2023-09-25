@@ -15,6 +15,5 @@ export const postSearchController = (post) => {
     } else if (inputDateSearch !== '') {
         searchPostDate(post);
     }
-
     clearFields();
 };
