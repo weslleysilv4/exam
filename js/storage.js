@@ -23,14 +23,14 @@ export function readPost () {
 
 // CRUD - UPDATE
 export function updatePost (index, post) {
-  const dbPost = readPost() // Supondo que a função readPost() exista para ler os dados do local storage.
+  const dbPost = readPost() 
   dbPost[index] = post
-  setLocalStorage(dbPost) // Supondo que a função setLocalStorage() exista para salvar os dados no local storage.
+  setLocalStorage(dbPost)
 }
 
 // CRUD - DELETE
 export function deletePost (index) {
-  const dbPost = readPost() // Supondo que a função readPost() exista para ler os dados do local storage.
+  const dbPost = readPost()
   dbPost.splice(index, 1)
-  setLocalStorage(dbPost) // Supondo que a função setLocalStorage() exista para salvar os dados no local storage.
+  setLocalStorage(dbPost)
 }
