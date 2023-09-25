@@ -18,7 +18,7 @@ export function createPost (post) {
 
 // CRUD - READ
 export function readPost () {
-  getLocalStorage()
+  return getLocalStorage()
 }
 
 // CRUD - UPDATE

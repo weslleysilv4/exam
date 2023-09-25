@@ -1,7 +1,14 @@
 import { openMenu } from './js/openMenu.js'
 import { openModalCreate, openModalSearch, closeModalCreate, closeModalSearch } from './js/openModal.js'
+import { removePost } from './js/removePost.js'
 import { savePost } from './js/savePost.js'
 import { searchPost } from './js/searchPost.js'
+import { updateTable } from './js/updateTable.js'
+
+updateTable();
+
+document.querySelector('.post-section')
+  .addEventListener('click', removePost)
 
 document.querySelector('.menu-btn')
   .addEventListener('click', openMenu)
