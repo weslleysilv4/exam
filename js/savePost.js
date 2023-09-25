@@ -2,6 +2,8 @@ import { createPost } from './storage.js'
 import {isValidFields} from './isValidFields.js'
 import { insertInf } from './insertInf.js'
 import { updateTable } from './updateTable.js'
+import { closeModalCreate } from './openModal.js'
+import { clearFields } from './clearFields.js'
 
 const data = new Date()
 export const savePost = () => {

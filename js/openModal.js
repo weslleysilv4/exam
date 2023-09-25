@@ -3,10 +3,7 @@ export const openModalCreate = () => {
   .classList.add('active')
 }
 
-export const closeModalCreate = () => {
-  document.querySelector('.modal-content')
-  .classList.remove('active')
-}
+export const closeModalCreate = () => document.querySelector('.modal-content').classList.remove('active')
 
 export const openModalSearch = () => {
   document.querySelector('.modal-search')
