@@ -8,6 +8,6 @@ export const updateTable = () => {
 }
 
 const clearTable = () => {
-    const postLines = document.querySelectorAll('.post-section>table>tbody tr')
-    postLines.forEach(line => line.parentNode.removeChild(line))
+    const postRow = document.querySelectorAll('#tablePosts>tbody tr')
+    postRow.forEach(row => row.parentNode.removeChild(row))
 }

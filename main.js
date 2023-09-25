@@ -34,5 +34,7 @@ document.getElementById('close-panel-icon-search')
   })
 
 document.getElementById('create-post-btn')
-  .addEventListener('click', savePost)
+  .addEventListener('click', () => {
+    savePost();
+  })
 

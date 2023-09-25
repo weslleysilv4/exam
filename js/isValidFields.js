@@ -1,4 +1,4 @@
-export default function isValidFields () {
-    const form = document.querySelectorAll('form')
-    form.reportValidity()
+export const isValidFields = () => {
+    const form = document.getElementById('form')
+    return form.reportValidity()
 }
