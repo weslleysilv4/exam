@@ -7,7 +7,7 @@ export const removePost = (event) => {
         const post = readPost()[index[1]]
         const response = confirm(`Deseja realmente excluir o post ${post.title}?`);
         if(response){
-            deletePost(index);
+            deletePost(index[1]);
             updateTable();
         }
     }
