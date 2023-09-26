@@ -1,6 +1,5 @@
 import { clearFields } from "./clearFields";
 import { insertInf } from "./insertInf";
-import { closeModalSearch } from "./openModal";
 import { readPost } from "./storage";
 import { updateTable } from "./updateTable";
 
@@ -18,6 +17,6 @@ export const searchPostTitle = () => {
         alert('Post não encontrado!');
         updateTable();
     }
-    closeModalSearch();
+    clearFields();
 };
 

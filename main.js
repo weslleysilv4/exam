@@ -30,7 +30,10 @@ document.getElementById('close-panel-icon')
   .addEventListener('click', closeModalCreate)
 
 document.getElementById('close-panel-icon-search')
-  .addEventListener('click', closeModalSearch)
+  .addEventListener('click', () => {
+    closeModalSearch();
+    updateTable();
+  })
 
 document.getElementById('create-post-btn')
   .addEventListener('click', savePost)
