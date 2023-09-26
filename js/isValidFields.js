@@ -12,9 +12,9 @@ const postVerify = () => {
     const dbPost = readPost();
     const titleVal = document.getElementById('p-title').value;
     const titles = dbPost.filter(post => post.title === titleVal);
-    
-    if(titleVal === titles[0].title) {
-        alert(`O post ${titleVal} já existe!`)
+
+    if(titles.length === 1) {
+        alert(`Já existe um post com o título ${titleVal}!`)
         return false
     }
     return true
